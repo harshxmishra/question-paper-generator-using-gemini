@@ -1,8 +1,6 @@
 # Question Paper Generator Using Gemini
 
-Welcome to the **Question Paper Generator Using Gemini**! This project uses cutting-edge AI technology to create question papers based on user-defined parameters such as difficulty level, topic categories, and more. It's designed to assist educators in streamlining the process of preparing question papers tailored to specific requirements.
-
----
+Welcome to the Question Paper Generator Using Gemini! This project uses cutting-edge AI technology to create question papers based on user-defined parameters such as difficulty level, topic categories, and more. It's designed to assist educators in streamlining the process of preparing question papers tailored to specific requirements.
 
 ## Features
 
@@ -12,8 +10,6 @@ Welcome to the **Question Paper Generator Using Gemini**! This project uses cutt
 - **AI-Powered Generation**: Utilize Google's Gemini and FAISS for embedding and conversational AI to generate question papers.
 - **Interactive UI**: A user-friendly Streamlit interface for seamless interaction.
 
----
-
 ## Tech Stack
 
 - **Frontend**: Streamlit
@@ -21,8 +17,6 @@ Welcome to the **Question Paper Generator Using Gemini**! This project uses cutt
 - **AI Models**: Google Gemini (Generative AI) and GoogleGenerativeAIEmbeddings
 - **Vector Database**: FAISS (Facebook AI Similarity Search)
 - **Other Tools**: PyPDF2, LangChain, dotenv
-
----
 
 ## Installation
 
@@ -35,72 +29,93 @@ Follow these steps to set up the project locally:
 
 ### Steps
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/question-paper-generator-using-gemini.git
-   cd question-paper-generator-using-gemini
+#### Clone the Repository:
 
-    Set Up Virtual Environment:
+```bash
+git clone https://github.com/yourusername/question-paper-generator-using-gemini.git
+cd question-paper-generator-using-gemini
+```
 
+#### Set Up Virtual Environment:
+
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-Install Dependencies:
+#### Install Dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Configure Environment Variables: Create a .env file in the project root with your Google API Key:
+#### Configure Environment Variables:
 
+Create a `.env` file in the project root with your Google API Key:
+
+```
 GOOGLE_API_KEY=your_google_api_key
+```
 
-Run the Application:
+#### Run the Application:
 
-    streamlit run app.py
+```bash
+streamlit run app.py
+```
 
-    Access the App: Open your browser and navigate to http://localhost:8501.
+#### Access the App:
 
-How to Use
+Open your browser and navigate to [http://localhost:8501](http://localhost:8501).
 
-    Upload PDF Documents:
-        Use the sidebar to upload PDF files containing relevant content for generating the question paper.
-        Click "Submit & Process" to extract and preprocess the content.
+## How to Use
 
-    Input Parameters:
-        Provide the context or specific instructions for the question paper.
-        Select difficulty level, enter topic categories, maximum marks, and important topics.
+### Upload PDF Documents:
 
-    Generate Question Paper:
-        Click the "Generate Question Paper" button.
-        View the AI-generated question paper directly in the app.
+- Use the sidebar to upload PDF files containing relevant content for generating the question paper.
+- Click "Submit & Process" to extract and preprocess the content.
 
-Example Use Case
+### Input Parameters:
 
-    Upload PDFs: Upload documents containing course material or notes.
-    Set Parameters: Choose "Medium" difficulty, topics like "Algebra, Calculus," maximum marks as 50, and important topics such as "Integration, Derivatives."
-    Generate Output: Receive a customized, structured question paper covering all specified requirements.
+- Provide the context or specific instructions for the question paper.
+- Select difficulty level, enter topic categories, maximum marks, and important topics.
 
-Contributing
+### Generate Question Paper:
+
+- Click the "Generate Question Paper" button.
+- View the AI-generated question paper directly in the app.
+
+## Example Use Case
+
+1. **Upload PDFs**: Upload documents containing course material or notes.
+2. **Set Parameters**: Choose "Medium" difficulty, topics like "Algebra, Calculus," maximum marks as 50, and important topics such as "Integration, Derivatives."
+3. **Generate Output**: Receive a customized, structured question paper covering all specified requirements.
+
+## Contributing
 
 We welcome contributions! Follow these steps to contribute:
 
-    Fork the repository.
-    Create a new branch for your feature or bug fix:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
 
-git checkout -b feature-name
+   ```bash
+   git checkout -b feature-name
+   ```
 
-Commit your changes and push:
+3. Commit your changes and push:
 
-    git commit -m "Add your message here"
-    git push origin feature-name
+   ```bash
+   git commit -m "Add your message here"
+   git push origin feature-name
+   ```
 
-    Create a Pull Request.
+4. Create a Pull Request.
 
-License
+## License
 
 This project is licensed under the MIT License.
-Acknowledgments
 
-    Google Generative AI for their powerful Gemini model.
-    LangChain for simplifying AI chain creation.
-    The open-source community for invaluable libraries and tools.
+## Acknowledgments
 
+- Google Generative AI for their powerful Gemini model.
+- LangChain for simplifying AI chain creation.
+- The open-source community for invaluable libraries and tools.
